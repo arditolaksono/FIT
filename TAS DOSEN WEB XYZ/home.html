@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="coba.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- My Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- MY CSS -->
+    <style type="text/css">
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+   
+         body {
+          background-color: white;
+          font-family: 'Poppins', sans-serif;
+        }
+
+        .rectangle{
+        background: #F1FFFC;
+        border: 1px solid rgba(27, 24, 34, 0.15);
+        box-sizing: border-box;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        opacity: 0.8;
+        margin: 10px 15px;
+        width: 150px;
+        }
+
+        .rectangle:hover, .rectangle:active{
+        opacity: 1;
+        }
+
+        .menumenu{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        color: black;
+        }
+
+        a.menusamping:hover,a.menusamping:active{
+        text-decoration: none;
+        }
+
+        .sidenav .row{
+            width: 99%;
+            margin: auto;
+        }
+
+        nav {
+          background-color: white;
+        }
+
+        nav img{
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        nav .nav-item {
+            margin: auto 20px;
+            font-size: 17px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        nav .active {
+          font-size: 18px;
+        }
+
+        nav .form-inline {
+          margin-left: 25px;
+        }
+
+        nav .form-inline input, .search{
+          background-color: #E8E8E8;
+          border: #E8E8E8;
+          height: 40px;
+          padding: 8px;
+          border-radius: 10px;
+        }
+
+        nav .form-inline img {
+          margin-left: 25px;
+        }
+
+        nav p {
+          margin: auto;
+        }
+
+        .jumbotron {
+          background-color:white;
+        }
+
+        .jumbotron img {
+          height: 455px;
+          margin-top: 20px;
+        }
+
+        .jumbotron .judul {
+         margin: auto;
+         padding: 0 70px;
+        }     
+
+        .jumbotron h1 {
+          font-size: 40px;
+          font-weight: bold;
+        }
+
+        .jumbotron .btn a{
+          text-decoration: none;
+          color: #1B1822;
+        }
+        
+        .jumbotron .yuk {
+            background-color: #89EFD7;
+            border: #89EFD7;
+            color: #1B1822;
+            border-radius: 100px;
+            font-weight: bold;
+            padding: 15px 30px;
+            font-size: 16px;
+        }
+
+        .jumbotron .yuk:hover {
+            background-color: green;
+        }
+
+        .map{
+          margin: 50px 0;
+        }
+
+        .map .row{
+          width: 70%;
+          margin: auto;   
+          padding: 20px 10px;       
+        }
+
+        .map iframe {
+          margin: auto;
+          width: 100%;
+          border-radius: 20px;
+        }
+        .map h2{
+          font-size: 30px;
+          font-weight: bold;
+          color: rgba(117,112,112,0.8);
+          text-align: center;
+          margin: 20px 0;
+        }
+
+        footer {
+            background-image: linear-gradient(to top, rgba(162,191,189,1), rgba(162,191,189,0));
+            height: 350px;
+            width: 100%;
+            padding: 40px 70px;
+        }
+
+        footer h4{
+            font-size: 18px;
+            font-weight: bold;
+            color: #1B1822;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        footer .sosmed {
+            height: 25px;
+            width: 25px;
+            margin: 0 5px;
+        }
+
+        footer p{
+            font-size: 18px;
+            text-align: center;
+            margin-top: 70px;
+            font-weight: bold;
+        }
+
+        footer h6{
+          font-weight: bold;
+        }
+
+        footer .logoo{
+            width: 100px;
+        }
+
+        footer .empat img{
+            height: 50px;
+            margin: 10px 25px;
+        }
+
+        @media only screen and (max-width: 768px){
+
+            footer{
+                height: 750px;
+            }
+
+            footer .app img{
+                width: 50px;
+            }
+
+            footer h1{
+                font-size: 21px;
+            }
+
+            footer .col-md{
+                margin-top: 30px;
+            }
+        }
+        
+
+
+    </style>
+
+    <title>Home</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo3.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                  <a class="nav-item nav-link active" href="home.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="struk.html">Struk</a>
+                  <a class="nav-item nav-link" href="pengaturan.html">Pengaturan</a>
+                  <a class="nav-item nav-link" href="akun.html">Akun</a>
+                  <div class="form-inline">
+                    <i class="fas fa-bell" style="color: #1B1822; margin-right: 20px; cursor: pointer;"></i>
+                    <input class="mr-sm-2" type="search" placeholder="Cari lokasi parkir..." aria-label="Search">
+                    <img src="img/foto.png">
+                  </div>
+                  <div class="profil">
+                    
+                  </div>
+              </div>
+            </div>
+        </div>
+      </nav>
+
+      <div class="jumbotron">
+        <div class="row">
+        
+            <div class="col-md-5 judul">
+              <h1>Booking tempat parkirmu dengan cepat dan tanpa ribet.</h1>
+                <button class="btn yuk" type="submit"><a href="booking.html">Mulai Sekarang</a> </button>
+            </div>
+            <div class="col-md-6">
+              <img src="img/g13.png" class="hero">
+            </div>
+          </div>
+      </div>
+    
+
+      <!-- side nav -->
+      <div class="sidenav">
+        <div class="row justify-content-md-center">
+          <div class="col-md-2">
+        <a class="menusamping" href="booking.html">
+          <div class="rectangle text-center">
+            <img src="img/online-booking 1.png" style="margin-top: 20px">
+            <p class="menumenu">Booking</p>
+          </div>
+      </a>
+        </div>
+
+            <div class="col-md-2">
+              <a class="menusamping" href="transaksi.html">
+                <div class="rectangle text-center">
+                  <img src="img/online-booking2.png" style="margin-top: 20px">
+                  <p class="menumenu">Transaksi</p>
+                </div>
+              </a>
+            </div>
+
+          <div class="col-md-2">
+            <a class="menusamping" href="KodeQR.html">
+              <div class="rectangle text-center">
+                <img src="img/online-booking3.png" style="margin-top: 20px">
+                <p class="menumenu">Kode QR</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-2">
+            <a class="menusamping" href="history.html">
+              <div class="rectangle text-center">
+                <img src="img/online-booking4.png" style="margin-top: 20px">
+                <p class="menumenu">History</p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- akhir sidenav -->
+
+      <div class="map">
+        <div class="row ">
+            <div class="col-md">
+              <h2>Lihat lokasi parkir disekitar anda</h2>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.255241613127!2d110.41378831414542!3d-6.979180470280404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b5242b2daf9%3A0x590ece08d249b4e3!2sParagon%20City%20Mall!5e0!3m2!1sen!2sid!4v1607160715543!5m2!1sen!2sid" width="600" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+      </div>
+
+      <footer>
+        <div class="container-fluid satu">
+          <div class="row">
+            <div class="col-md">
+              <img src="img/logo3.png" class="logoo">
+              <h6>Mitra Parkir Anda</h6>
+            </div>
+            <div class="col-md dua">
+              <h4>Tentang Kami</h4><br>
+              <h4>Layanan kami</h4><br>
+              <h4>Pusat Bantuan</h4>
+            </div>
+            <div class="col-md tiga">
+              <h4>Hubungi Kami</h4><br>
+              <img src="img/instagram.svg" class="sosmed">
+              <img src="img/youtube.svg" class="sosmed">
+              <img src="img/linkedin.svg" class="sosmed">
+              <img src="img/facebook.svg" class="sosmed">
+            </div>
+            <div class="col-md empat">
+              <h2 class="font-weight-bold">Get the app</h2> 
+              <img src="img/playstore.png"> 
+              <img src="img/apple-store.png">
+            </div>
+          </div>
+          <p>Copyright @2020 XyZ</p>
+        </div>
+      </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
