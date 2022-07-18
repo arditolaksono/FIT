@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
+    
+    <!-- My Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- MY CSS -->
+    <link href="{{url_for('static', filename='css/csslp.css')}}" rel="stylesheet">
+
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="{{url_for('static', filename='img/logo2.png')}}"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="#">Tentang Kami</a>
+                <a class="nav-item nav-link" href="#">Layanan Kami</a>
+                <a class="nav-item nav-link" href="#">Pusat Bantuan</a>
+                <div class="button">
+                    <a href="daftar.html"><button class="btn daftar" type="submit">Daftar</button></a>
+                    <a href="login.html"><button class="btn btn-light login" type="submit">Login</button></a>
+                </div>
+            </div>
+            </div>
+        </div>
+      </nav>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <div class="row ">
+            <div class="col-md-6 judul">
+              <h1>Booking tempat parkirmu.</h1>
+                <p>Cari tempat parkir yang  kamu inginkan tanpa <br>perlu mengantri.</p>
+                <button class="btn yuk" type="submit"><a href="login.html"> Mulai Sekarang</a></button>
+            </div>
+            <div class="col-md-5">
+              <img src="{{url_for('static', filename='img/g12.png')}}" class="hero">
+            </div>
+          </div>
+      </div>
+      <!-- akhir jumbotron -->
+
+      <!-- Section 1 -->
+      <div class="section-1">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-4">
+            <h1 class="font-weight-bold text-center">Apa itu <img src="{{url_for('static', filename='img/logo2.png')}}" class="logo1"> ?</h1>
+            <p class="text-center">XyZ adalah platform aplikasi yang menyediakan layanan bagi para penggunanya untuk memilih tempat parkir via online secara cepat dan tidak perlu mengantri. Cukup Download di aplikasi atau buka di web XyZ</p>
+          </div>
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-4">
+            <h1 class="font-weight-bold">Kenapa <img src="{{url_for('static', filename='img/logo2.png')}}" class="logo1"> ?</h1>
+            <p class="text-center">Mencari lahan parkir khususnya di kota besar tentunya jadi masalah yang merepotkan, hadirnya XyZ tentunya dapat membantu dalam memecahkan masalah tersebut. Anda tinggal duduk dan klik tempat parkir yang anda inginkan.</p>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>  
+      <!-- akhir section 1 -->
+
+      <footer>
+        <div class="container-fluid satu">
+          <div class="row">
+            <div class="col-md">
+              <img src="{{url_for('static', filename='img/logo2.png')}}" class="logoo">
+              <h6>Mitra Parkir Anda</h6>
+            </div>
+            <div class="col-md dua">
+              <h4>Tentang Kami</h4><br>
+              <h4>Layanan kami</h4><br>
+              <h4>Pusat Bantuan</h4>
+            </div>
+            <div class="col-md tiga">
+              <h4>Hubungi Kami</h4><br>
+              <img src="{{url_for('static', filename='img/instagram.svg')}}" class="sosmed">
+              <img src="{{url_for('static', filename='img/youtube.svg')}}" class="sosmed">
+              <img src="{{url_for('static', filename='img/linkedin.svg')}}" class="sosmed">
+              <img src="{{url_for('static', filename='img/facebook.svg')}}" class="sosmed">
+            </div>
+            <div class="col-md empat">
+              <h2 class="font-weight-bold">Get the app</h2> 
+              <img src="{{url_for('static', filename='img/playstore.png')}}"> 
+              <img src="{{url_for('static', filename='img/apple-store.png')}}">
+            </div>
+          </div>
+          <p>Copyright @2020 XyZ</p>
+        </div>
+      </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
