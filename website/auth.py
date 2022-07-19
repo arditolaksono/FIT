@@ -1,10 +1,11 @@
-from flask import Blueprint
+from django.shortcuts import render
+from flask import Blueprint,render_template
 
 auth = Blueprint('auth', __name__)
 
 @auth.route('/login')
 def login():
-    return 'Login'
+    return render_template('login.html')
 
 @auth.route('/logout')
 def logout():
@@ -12,4 +13,4 @@ def logout():
 
 @auth.route('/sign-up')
 def sign_up():
-    return 'Sign Up'
+    return render_template('daftar.html')
