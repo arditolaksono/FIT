@@ -131,14 +131,14 @@
           <div class="col-md-2"></div>
           <!-- Image -->
           <div class="col-md-4 image-card">
-            <a href="landingPage.html"><img src="img/login.svg" class="gambar-login"></a>
+            <a href="landingPage.html"><img src="{{url_for('static', filename='img/login.svg')}}" class="gambar-login"></a>
           </div>
           <!-- login -->
           <div class="col-md-4 login-card">
-            <div class="logo">
-            <a href="landing_page.html"><img src="img/logo2.png"></a>
+            <div class="logo text-center">
+            <img src="{{url_for('static', filename='img/logo2.png')}}"></a>
            </div>
-            <form action="home.html" class="needs-validation" novalidate>
+            <form method="POST" class="needs-validation" novalidate>
               <!-- username -->
               <div class="form-group text-box">
                 <i class="fa fa-user" aria-hidden="true"></i>
@@ -151,7 +151,7 @@
               <div class="form-group text-box">
                 <i class="fa fa-lock" aria-hidden="true"></i>
                 <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd" name="pswd" required>
+                <input type="password" class="form-control" id="pwd" name="pwd" required>
                 <div class="valid-feedback">Valid.</div>
                 <div class="invalid-feedback">Masukkan password terlebih dahulu.</div>
               </div>
@@ -160,8 +160,8 @@
               <div class="sosmed text-center">
                 <div class="row">
                 <div class="col-md-4"></div>
-                <div class="col-md-2"><a href="#"><img src="img/gmail.svg" class="gmail"></a></div>
-                <div class="col-md-2"><a href="#"><img src="img/facebook.svg" class="facebook"></a></div>
+                <div class="col-md-2"><a href="#"><img src="{{url_for('static', filename='img/gmail.svg')}}" class="gmail"></a></div>
+                <div class="col-md-2"><a href="#"><img src="{{url_for('static', filename='img/facebook.svg')}}" class="facebook"></a></div>
                 <div class="col-md-4"></div>
                 </div>
               </div>
