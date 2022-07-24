@@ -143,6 +143,23 @@
     <title>Daftar</title>
   </head>
   <body class="mt-5">
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if
+      messages %} {% for category, message in messages %} {% if category ==
+      'error' %}
+      <div class="alert alert-danger alter-dismissable fade show" role="alert">
+        {{ message }}
+        <button type="button" class="close" data-dismiss="alert">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      {% else %}
+      <div class="alert alert-success alter-dismissable fade show" role="alert">
+        {{ message }}
+        <button type="button" class="close" data-dismiss="alert">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      {% endif %} {% endfor %} {% endif %} {% endwith %}
     <div class="kotak">
     <div class="container text-center text-white">
         <div class="row justify-content-center ">
@@ -190,9 +207,9 @@
                       <input type="password" id="password2" name="password2" class="form-control" aria-describedby="passwordHelpInline" placeholder="Masukan lagi kata sandi">
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input checkbox" type="checkbox" value="" id="defaultCheck1">
+                      <input class="form-check-input checkbox" type="checkbox" name="checkbox" value="" id="defaultCheck1">
                       <label class="form-check-label agree" for="defaultCheck1">
-                        I agree to terms & conditions
+                        Saya setuju dengan syarat dan ketentuan yang berlaku
                       </label><br><br>
                     </div>
                     <button type="submit" class="daftar btn-primary">Daftar Sekarang</button></a>

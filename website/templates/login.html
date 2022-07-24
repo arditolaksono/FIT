@@ -125,6 +125,23 @@
     <title>LOGIN</title>
   </head>
   <body>
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if
+      messages %} {% for category, message in messages %} {% if category ==
+      'error' %}
+      <div class="alert alert-danger alter-dismissable fade show" role="alert">
+        {{ message }}
+        <button type="button" class="close" data-dismiss="alert">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      {% else %}
+      <div class="alert alert-success alter-dismissable fade show" role="alert">
+        {{ message }}
+        <button type="button" class="close" data-dismiss="alert">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      {% endif %} {% endfor %} {% endif %} {% endwith %}
 
     <div class="container-fluid">
         <div class="row">
@@ -142,17 +159,17 @@
               <!-- username -->
               <div class="form-group text-box">
                 <i class="fa fa-user" aria-hidden="true"></i>
-                <label for="uname">Username:</label>
-                <input type="text" class="form-control" id="uname" name="uname" required>
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Masukkan username terlebih dahulu.</div>
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="email" name="email" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Masukkan email terlebih dahulu.</div>
               </div>
               <!-- password -->
               <div class="form-group text-box">
                 <i class="fa fa-lock" aria-hidden="true"></i>
-                <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd" name="pwd" required>
-                <div class="valid-feedback">Valid.</div>
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+                <div class="valid-feedback"></div>
                 <div class="invalid-feedback">Masukkan password terlebih dahulu.</div>
               </div>
               <button type="submit" class="btn btn-primary font-weight-bold">Login</button>
@@ -165,7 +182,7 @@
                 <div class="col-md-4"></div>
                 </div>
               </div>
-              <p>Pengguna Baru? <a href="daftar.html" class="daftar font-weight-bold">Daftar disini</a></p>
+              <p>Pengguna Baru? <a href="/sign-up" class="daftar font-weight-bold">Daftar disini</a></p>
             </form>
 
             
