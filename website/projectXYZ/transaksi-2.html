@@ -1,4 +1,4 @@
-  <!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -59,6 +59,10 @@
         a.menusamping:hover,a.menusamping:active{
         text-decoration: none;
         }
+        
+        .sidenav {
+            margin: 70px 0;
+        }
 
         nav {
           background-color: white;
@@ -100,7 +104,6 @@
         }
 
         footer {
-            margin-top: 60px;
             background-image: linear-gradient(to top, rgba(162,191,189,1), rgba(162,191,189,0));
             height: 350px;
             width: 100%;
@@ -141,41 +144,57 @@
             margin: 10px 25px;
         }
 
-        .sidenav {
-            margin: 70px 0;
-        }
-
-
-        .container .notif {
+        .row{
+            width: 99%;
             margin: auto;
-            width: 40%;
-            height: 350px;
         }
 
-        .container .notif {
+        section .row{
+            margin: 60px 0;
+        }
+
+        section h2{
+            font-weight: bold;
+            font-size: 22px;
+            margin: 30px;
+            text-align: center;
+        }
+
+        section .waktu-space img{
+            width: 90%;
+            margin: 20px 0;
+        }
+
+        section .input-group {
+           border-bottom: 2px solid #747474;
+           border-top: 2px solid #747474;
+           margin: 10px;
+        }
+
+        section .input-group span, section .input-group label {
+            width: 160px;
+            border: none;
+            background: none;
+            font-weight: bold;
+            color: #747474;
+        }
+
+        section .input-group input, section .input-group select {
+            width: 200px;
+            border: none;
+            height: 50px;
+        }
+
+        section .col-4 {
+            border: none;
+            padding: 20px 35px 20px 10px;
+            box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        section .metode-bayar img{
             width: 100%;
-            padding-top: 120px;
-        }
-
-        .container h1{
-            text-align: center;
-            font-size: 30px;
-            font-weight: bold;
-        }
-
-        .container p{
-            text-align: center;
-            font-size: 20px;
-        }
-
-        .container span a{
-            font-weight: bold;
-            color: #1B1822;
-            text-decoration: none;
-        }
-
-        .container span a:hover {
-            color: #89EFD7;
+            margin: 20px 10px;
+            
         }
 
         .aktif { 
@@ -185,6 +204,31 @@
 
         .aktif p{
             color: white;
+        }
+
+        section .btn {
+            background-color: #1B1822;
+            border: #89EFD7;
+            color: white;
+            border-radius: 100px;
+            font-weight: bold;
+            padding: 15px 0;
+            font-size: 14px;
+            width: 46%;
+            margin: 20px 10px;
+        }
+
+        section .btn-danger {
+          background-color: red;
+        }
+
+        section .btn a{
+          text-decoration: none;
+          color: #F1FFFC;
+        }
+
+        section .btn:hover {
+            background-color: green;
         }
 
         @media only screen and (max-width: 768px){
@@ -204,17 +248,24 @@
             footer .col-md{
                 margin-top: 30px;
             }
+
+            section .input-group span, section .input-group label{
+              font-size: 75%;
+            }
+
+            section .btn{
+              width: 80%;
+            }
         }
         
 
 
     </style>
 
-    <title>History</title>
+    <title>Pembayaran </title>
   </head>
 
   <body>
-    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/logo3.png"></a>
@@ -224,8 +275,8 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link" href="home.html">Beranda </a>
-                <a class="nav-item nav-link" href="booking.html">Lihat Tempat Parkir </a>
-                <a class="nav-item nav-link active" href="history.html">Riwayat Pesan <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="booking.html">Lihat Tempat Parkir <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="history.html">Riwayat Pesan</a>
                   <div class="form-inline">
                     <i class="fas fa-bell" style="color: #1B1822; margin-right: 20px; cursor: pointer;"></i>
                     <input class="mr-sm-2" type="search" placeholder="Cari lokasi parkir..." aria-label="Search">
@@ -238,16 +289,60 @@
             </div>
         </div>
       </nav>
-      <!-- akhir navbar -->
 
-      <div class="container">
-          <div class="notif">
-            <h1><i>Belum ada transaksi</i></h1>
-            <p>Mulai booking <span><a href="booking.html">disini</a></span></p>
-          </div>
+      <!-- side nav -->
+      <div class="sidenav">
+        <div class="row justify-content-md-center">
+            <div class="col-md-2">
+                <a class="menusamping" href="booking.html">
+                  <div class="rectangle text-center">
+                    <img src="img/online-booking 1.png" style="margin-top: 20px">
+                    <p class="menumenu">Booking</p>
+                  </div>
+                </a>
+              </div>
+
+            <div class="col-md-2">
+              <a class="menusamping" href="transaksi.html">
+                <div class="rectangle aktif text-center">
+                  <img src="img/online-booking2.png" style="margin-top: 20px">
+                  <p class="menumenu">Transaksi</p>
+                </div>
+              </a>
+            </div>
+
+        </div>
       </div>
+      <!-- akhir sidenav -->
 
-      <!-- footer -->
+      <section>
+        <div class="row justify-content-around">
+            <div class="col-6 metode-bayar">
+              <h2>Metode pembayaran</h2>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01">Metode Bayar</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>-</option>
+                  <option value="1">Virtual Account BCA</option>
+                  <option value="2">Virtual Account BRI</option>
+                  <option value="3">Virtual Account BNI</option>
+                  <option value="4">Virtual Account Mandiri</option>
+                </select>
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">No. Virtual Acc</span>
+                </div>
+                <input type="text" class="form-control" value="126 597621034875" aria-label="Default" aria-describedby="inputGroup-sizing-default" readonly>
+              </div>
+              <button type="submit" class="btn btn-danger font-weight-bold"><a href="transaksi.html">Kembali</a></button>
+              <button type="submit" class="btn btn-primary font-weight-bold"><a href="pesanan-berhasil.html">Bayar</a></button>
+            </div>
+          </div>
+      </section>
+
       <footer>
         <div class="container-fluid satu">
           <div class="row">
@@ -276,7 +371,6 @@
           <p>Copyright @2020 XyZ</p>
         </div>
       </footer>
-      <!-- akhir footer -->
 
 
 

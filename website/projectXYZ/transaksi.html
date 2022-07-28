@@ -75,13 +75,12 @@
 
         nav .nav-item {
             margin: auto 20px;
-            font-size: 17px;
             font-weight: bold;
             font-size: 14px;
         }
 
         nav .active {
-          font-size: 18px;
+          font-size: 15px;
         }
 
         nav .form-inline {
@@ -157,12 +156,8 @@
         section h2{
             font-weight: bold;
             font-size: 22px;
-            margin: 10px 0;
-        }
-
-        section .waktu-space img{
-            width: 90%;
-            margin: 20px 0;
+            margin: 30px;
+            text-align: center;
         }
 
         section .input-group {
@@ -214,8 +209,8 @@
             font-weight: bold;
             padding: 15px 0;
             font-size: 14px;
-            width: 150px;
-            margin: 10px;
+            width: 100%;
+            margin: 20px 10px;
         }
 
         section .btn a{
@@ -270,17 +265,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ml-auto">
-                  <a class="nav-item nav-link active" href="home.html">Home <span class="sr-only">(current)</span></a>
-                  <a class="nav-item nav-link" href="struk.html">Struk</a>
-                  <a class="nav-item nav-link" href="pengaturan.html">Pengaturan</a>
-                  <a class="nav-item nav-link" href="akun.html">Akun</a>
+                <a class="nav-item nav-link" href="home.html">Beranda </a>
+                <a class="nav-item nav-link active" href="booking.html">Lihat Tempat Parkir <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="history.html">Riwayat Pesan</a>
                   <div class="form-inline">
                     <i class="fas fa-bell" style="color: #1B1822; margin-right: 20px; cursor: pointer;"></i>
                     <input class="mr-sm-2" type="search" placeholder="Cari lokasi parkir..." aria-label="Search">
                     <img src="img/foto.png">
-                  </div>
-                  <div class="profil">
-                    
                   </div>
               </div>
             </div>
@@ -308,33 +299,14 @@
               </a>
             </div>
 
-          <div class="col-md-2">
-            <a class="menusamping" href="KodeQR.html">
-              <div class="rectangle text-center">
-                <img src="img/online-booking3.png" style="margin-top: 20px">
-                <p class="menumenu">Kode QR</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-2">
-            <a class="menusamping" href="history.html">
-              <div class="rectangle text-center">
-                <img src="img/online-booking4.png" style="margin-top: 20px">
-                <p class="menumenu">History</p>
-              </div>
-            </a>
-          </div>
-
         </div>
       </div>
       <!-- akhir sidenav -->
 
       <section>
         <div class="row justify-content-around">
-            <div class="col-4 waktu-space">
+            <div class="col-6 waktu-space">
                 <h2>Pilih tanggal, jam, space parkir</h2>
-                <div class="paragon"><img src="img/paragon.png" alt="paragon"></div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Pilih tanggal</span>
@@ -383,32 +355,10 @@
                       <option value="10">B11</option>
                       <option value="11">B12</option>
                     </select>
-                </div>
-                  
+                </div> 
+                <button type="submit" class="btn btn-primary font-weight-bold"><a href="transaksi-2.html">Lanjut</a></button>
             </div>
-            <div class="col-4 metode-bayar">
-              <h2>Metode pembayaran</h2>
-              <img src="img/bca.png">
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <label class="input-group-text" for="inputGroupSelect01">Metode Bayar</label>
-                </div>
-                <select class="custom-select" id="inputGroupSelect01">
-                  <option selected>-</option>
-                  <option value="1">Virtual Account BCA</option>
-                  <option value="2">Virtual Account BRI</option>
-                  <option value="3">Virtual Account BNI</option>
-                  <option value="4">Virtual Account Mandiri</option>
-                </select>
-              </div>
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">No. Virtual Acc</span>
-                </div>
-                <input type="text" class="form-control" value="126 597621034875" aria-label="Default" aria-describedby="inputGroup-sizing-default" readonly>
-              </div>
-              <button type="submit" class="btn btn-primary font-weight-bold"><a href="pesanan-berhasil.html">Bayar</a></button>
-            </div>
+            
           </div>
       </section>
 
