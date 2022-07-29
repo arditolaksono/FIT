@@ -11,3 +11,7 @@ def index():
 @login_required
 def home():
     return render_template('home.html')
+
+@views.route('/booking')
+def booking():
+    return render_template('booking.html')
